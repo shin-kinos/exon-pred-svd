@@ -12,7 +12,7 @@ A Rust program that predicts protein-coding regions in a DNA sequence based on S
 
 ### peroxide (version `0.31` or more) 
 
-* `proxide` (https://docs.rs/peroxide/latest/peroxide/) 
+* `peroxide` (https://docs.rs/peroxide/latest/peroxide/) 
 
 ``` 
 [dependencies]
