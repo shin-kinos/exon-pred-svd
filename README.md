@@ -104,6 +104,8 @@ It is confirmed that the output result of the program is identical to a MATLAB's
 
 ### Result data visualization with R 
 
+![ readme_image_04 ]( ./img/PlotAnim.gif ) 
+
 [Visit here !]() 👈👈👈 
 
 ## References 
