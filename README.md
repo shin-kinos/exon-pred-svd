@@ -73,7 +73,7 @@ Where ***A*** is rearranged 3 × *m* matrix of filtered signal, ***U*** and ***V
 
 A DNA sequence in FASTA format. ⚠️ NOTE that a Multi-FASTA format is NOT acceptable, means the input file MUST have just 1 DNA sequence. 
 
-See some example input data in `./example/` directory. 
+See an example input data in `./example/` directory. 
 
 ## Usage 
 
