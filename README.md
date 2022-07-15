@@ -2,6 +2,8 @@
 
 A Rust program that predicts protein-coding regions in a DNA sequence based on Singular Value Decomposition (SVD). 
 
+[![GitHub release](https://img.shields.io/badge/release-v0.1.1-brightgreen)](https://github.com/shin-kinos/exon-pred-svd/releases/tag/v0.1.1) [![GitHub license](https://img.shields.io/badge/LICENSE-MIT-blue)](https://github.com/shin-kinos/exon-pred-svd/blob/main/LICENSE) 
+
 ## Description 
 
 * A Rust program that predicts exons and introns in a DNA sequence. 
