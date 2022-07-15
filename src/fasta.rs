@@ -2,6 +2,7 @@
 use std::fs::read_to_string;
 
 use crate::error;
+use crate::error::ErrorType;
 
 pub struct Fasta {
 	pub title   : String,
@@ -41,7 +42,7 @@ impl Fasta {
 	pub fn check_fasta_info( &mut self ) {
 
 		/* The number of the sequences in the input FASTA file MUST be 1. */
-		if self.num_seq != 1 { error::error_bomb( "num_seq_not_one" ); }
+		if self.num_seq != 1 { error::error_bomb( ErrorType::NumSeqNotOne ); }
 
 		/* Whether or not the input data includes only { A, T, C, G, a, t, c, g }. */
 		check_symbol( &( self.seq ) );
@@ -62,13 +63,13 @@ fn check_symbol( seq : &String ) {
 				println!( "\nFATAL :" );
 				println!( "Non-standard letter was observed in the sequence : '{}'", dna );
 				println!( "" );
-				error::error_bomb( "non_standard_letter" );
+				error::error_bomb( ErrorType::NonStandardLetter );
 			},
 			_ => {
 				println!( "\nFATAL :" );
 				println!( "Unexpected symbol was observed in the sequence : '{}'", dna );
 				println!( "" );
-				error::error_bomb( "unexpected_symbol" );
+				error::error_bomb( ErrorType::UnexpectedSymbol );
 			},
 		}
 	}
